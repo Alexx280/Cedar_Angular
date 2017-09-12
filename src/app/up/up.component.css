@@ -80,36 +80,34 @@
   background-repeat: no-repeat;
   color: #fff;
 }
-.fon_face .fon_button .centr_button_block {
-  position: inherit;
-  top: 0;
-  display: block;
-  text-align: center;
-  margin: 0 auto;
+.fon_face .fon_button .row {
   border: 1px solid #f00;
 }
-.fon_face .fon_button .centr_button_block .lit_button {
+.fon_face .fon_button .row .col-md-8 .lit_button {
   display: inline-block;
-  margin: 0 20px;
+  position: relative;
+  top: -15px;
+  margin: 0 0;
   cursor: pointer;
+  text-align: center;
 }
-.fon_face .fon_button .centr_button_block .lit_button .image {
+.fon_face .fon_button .row .col-md-8 .lit_button .image {
   width: 70px;
   height: 70px;
   border: 1px solid #fff;
   border-radius: 35px;
 }
-.fon_face .fon_button .centr_button_block .lit_button .image img {
+.fon_face .fon_button .row .col-md-8 .lit_button .image img {
   position: relative;
   top: 15px;
 }
-.fon_face .fon_button .centr_button_block .lit_button .image,
-.fon_face .fon_button .centr_button_block .lit_button .text {
+.fon_face .fon_button .row .col-md-8 .lit_button .image,
+.fon_face .fon_button .row .col-md-8 .lit_button .text {
   display: inline-block;
 }
-.fon_face .fon_button .centr_button_block .lit_button .text {
+.fon_face .fon_button .row .col-md-8 .lit_button .text {
   position: relative;
-  top: 20px;
+  top: 25px;
   width: 180px;
   margin-top: 10px;
 }
