@@ -1,5 +1,5 @@
 mixin little_button(adress, text)
-    .lit_button.col-4
+    .lit_button.col-xl-4.col-lg-4.col-md-4.cok-sm-4
         .image
             img(src= "assets/pic/face/button_"+adress+".png" )
         .text= text
@@ -21,8 +21,8 @@ mixin little_button(adress, text)
     .about Для взрослых и детей: здоровье крепче, <br/> иммунитет сильней
     .fon_button
         .row
-            .col-md-2
-            .col-md-8
+            .col-xl-2.col-lg-2.col-md-1
+            .col-xl-8.col-lg-8.col-md-10.colsm-12.lay
                 +little_button("time", "20 минутный сеанс в приятной обстановке.")
                 +little_button("cup", "Дегустация травянных чаёв")
                 +little_button("leaf", "Интересно и малышам и их родителям.")
