@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'eurofurence';
+  src: url("../../assets/fonts/eurofurence_bold.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 .fon_face {
   height: 911px;
   background-image: url("../../assets/pic/face/fon_forest.png");
@@ -27,18 +33,31 @@
     width: 80px;
   }
 }
-.fon_face .over .row .name_site {
+.fon_face .over .row .named {
+  border: 2px solid #000;
+  height: 100px;
+}
+@media (max-width: 992px) {
+  .fon_face .over .row .named {
+    width: 350px;
+  }
+}
+@media (max-width: 1100px) {
+  .fon_face .over .row .named {
+    margin-left: 10px;
+  }
+}
+.fon_face .over .row .named .name_site {
   border: 1px solid #008000;
+  height: 50px;
 }
 @media (max-width: 950px) {
-  .fon_face .over .row .name_site {
+  .fon_face .over .row .named .name_site {
     width: 180px;
   }
 }
-.fon_face .over .row .about_site {
-  position: absolute;
-  top: 65px;
-  left: 475px;
+.fon_face .over .row .named .about_site {
+  height: 50px;
 }
 .fon_face .over .row .icon_tel {
   position: absolute;
@@ -80,6 +99,16 @@
   font-size: 85px;
   color: #fff;
 }
+@media (min-width: 764px) and (max-width: 992px) {
+  .fon_face .name {
+    font-size: 60px;
+  }
+}
+@media (max-width: 764px) {
+  .fon_face .name {
+    font-size: 55px;
+  }
+}
 .fon_face .about {
   position: relative;
   top: 110px;
@@ -89,6 +118,16 @@
   color: #fff;
   font-size: 34px;
 }
+@media (min-width: 764px) and (max-width: 992px) {
+  .fon_face .about {
+    font-size: 34px;
+  }
+}
+@media (max-width: 764px) {
+  .fon_face .about {
+    font-size: 30px;
+  }
+}
 .fon_face .fon_button {
   position: relative;
   top: 160px;
@@ -97,8 +136,33 @@
   background-repeat: no-repeat;
   color: #fff;
 }
+@media (min-width: 764px) and (max-width: 1297px) {
+  .fon_face .fon_button {
+    height: 200px;
+    width: 100%;
+    background-repeat: repeat-y;
+  }
+}
+@media (max-width: 764px) {
+  .fon_face .fon_button {
+    height: 300px;
+    background-repeat: repeat-y;
+    top: 130px;
+  }
+}
 .fon_face .fon_button .row {
   border: 1px solid #f00;
+}
+@media (min-width: 764px) and (max-width: 1297px) {
+  .fon_face .fon_button .row {
+    position: inherit;
+    top: 30px;
+  }
+}
+@media (max-width: 764px) {
+  .fon_face .fon_button .row {
+    top: 0;
+  }
 }
 .fon_face .fon_button .row .lay {
   border: 1px solid #ff0;

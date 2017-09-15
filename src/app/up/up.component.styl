@@ -1,3 +1,10 @@
+@font-face
+  font-family 'eurofurence';
+  src url('../../assets/fonts/eurofurence_bold.ttf')  format('truetype');
+  font-weight bold;
+  font-style normal;
+
+
 .fon_face
   height 911px
   background-image url("../../assets/pic/face/fon_forest.png")
@@ -18,14 +25,20 @@
         height 100px
         @media (max-width 950px)
           width 80px
-      .name_site
-        border 1px solid green
-        @media (max-width 950px)
-          width 180px
-      .about_site
-        position absolute
-        top 65px
-        left 475px
+      .named
+        border 2px solid black
+        height 100px
+        @media (max-width 992px)
+          width 350px
+        @media (max-width 1100px)
+          margin-left 10px
+        .name_site
+          border 1px solid green
+          height 50px
+          @media (max-width 950px)
+            width 180px
+        .about_site
+          height 50px
       .icon_tel
         position absolute
         top 40px
@@ -61,6 +74,10 @@
     text-align center
     font-size 85px
     color white
+    @media (min-width 764px) and (max-width 992px)
+      font-size 60px
+    @media (max-width 764px)
+      font-size 55px
   .about
     position relative
     top 110px
@@ -69,6 +86,10 @@
     margin 0 auto
     color white
     font-size 34px
+    @media (min-width 764px) and (max-width 992px)
+      font-size 34px
+    @media (max-width 764px)
+      font-size 30px
   .fon_button
     position relative
     top 160px
@@ -76,11 +97,23 @@
     background-image url("../../assets/pic/face/fon_for_button.png")
     background-repeat no-repeat
     color white
+    @media (min-width 764px) and (max-width 1297px)
+      height 200px
+      width 100%
+      background-repeat repeat-y
+    @media (max-width 764px)
+      height 300px
+      background-repeat repeat-y
+      top 130px
     .row
       border 1px solid red
+      @media (min-width 764px) and (max-width 1297px)
+        position inherit
+        top 30px
+      @media (max-width 764px)
+        top 0
       .lay
         border 1px solid yellow
-
         .lit_button
           display inline-block
           position relative
