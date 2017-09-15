@@ -6,45 +6,53 @@
     background-color white
     height 100px
     width 100%
-    .logo
-      position absolute
-      left 375px
-      top 10px
-    .name_site
-      position absolute
-      top 30px
-      left 475px
-    .about_site
-      position absolute
-      top 65px
-      left 475px
-    .icon_tel
-      position absolute
-      top 40px
-      left 975px
-    .tel
-      position absolute
-      top 40px
-      left 1025px
-    .call_me
-      position absolute
-      top 30px
-      left 1270px
-      height 40px
-      width 270px
-      font-size 18px
-      dispay block
-      margin 0 auto
-      border 1px solid #653e2b
-      border-radius 20px
-      background-color #fff
-      padding 10px 20px
-      transition all lianer .5s
-      text-align center
-      cursor pointer
-      color #653e2b
-      &:hover
-        background-color #ccc
+    position absolute
+    .row
+      .offset
+        border 2px solid red
+        height 100px
+        @media (max-width 768px)
+          display none
+      .logo
+        border 1px solid blue
+        height 100px
+        @media (max-width 950px)
+          width 80px
+      .name_site
+        border 1px solid green
+        @media (max-width 950px)
+          width 180px
+      .about_site
+        position absolute
+        top 65px
+        left 475px
+      .icon_tel
+        position absolute
+        top 40px
+        left 975px
+      .tel
+        position absolute
+        top 40px
+        left 1025px
+      .call_me
+        position absolute
+        top 30px
+        left 1270px
+        height 40px
+        width 270px
+        font-size 18px
+        dispay block
+        margin 0 auto
+        border 1px solid #653e2b
+        border-radius 20px
+        background-color #fff
+        padding 10px 20px
+        transition all lianer .5s
+        text-align center
+        cursor pointer
+        color #653e2b
+        &:hover
+          background-color #ccc
   .name
     position relative
     top 100px

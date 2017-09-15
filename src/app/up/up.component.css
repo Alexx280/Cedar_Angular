@@ -7,33 +7,50 @@
   background-color: #fff;
   height: 100px;
   width: 100%;
-}
-.fon_face .over .logo {
   position: absolute;
-  left: 375px;
-  top: 10px;
 }
-.fon_face .over .name_site {
-  position: absolute;
-  top: 30px;
-  left: 475px;
+.fon_face .over .row .offset {
+  border: 2px solid #f00;
+  height: 100px;
 }
-.fon_face .over .about_site {
+@media (max-width: 768px) {
+  .fon_face .over .row .offset {
+    display: none;
+  }
+}
+.fon_face .over .row .logo {
+  border: 1px solid #00f;
+  height: 100px;
+}
+@media (max-width: 950px) {
+  .fon_face .over .row .logo {
+    width: 80px;
+  }
+}
+.fon_face .over .row .name_site {
+  border: 1px solid #008000;
+}
+@media (max-width: 950px) {
+  .fon_face .over .row .name_site {
+    width: 180px;
+  }
+}
+.fon_face .over .row .about_site {
   position: absolute;
   top: 65px;
   left: 475px;
 }
-.fon_face .over .icon_tel {
+.fon_face .over .row .icon_tel {
   position: absolute;
   top: 40px;
   left: 975px;
 }
-.fon_face .over .tel {
+.fon_face .over .row .tel {
   position: absolute;
   top: 40px;
   left: 1025px;
 }
-.fon_face .over .call_me {
+.fon_face .over .row .call_me {
   position: absolute;
   top: 30px;
   left: 1270px;
@@ -51,7 +68,7 @@
   cursor: pointer;
   color: #653e2b;
 }
-.fon_face .over .call_me:hover {
+.fon_face .over .row .call_me:hover {
   background-color: #ccc;
 }
 .fon_face .name {
